@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    background: #fef6e4;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Encabezado */
+header {
+    background: #F0E01F;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #fb8500;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header img {
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #F06E1F;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #023047;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h2 {
+    color: #fb8500;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #F06E1F;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+/* Texto */
+p, li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Lista */
+ul {
+    padding-left: 20px;
+}
+
+/* Galería de imágenes */
+.jy .yj {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jy img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+.linda{
+    margin-left: 600px;
+}
+
+.ay{
+    margin-bottom: ;
+}
+.ya{
+    display: flex;
+    flex-direction: horizontal;
+}
+.jy img:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen final */
+section img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .jy .yj {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
